@@ -16,4 +16,7 @@ curve = bezier_curve(T, x0, x1, t0, t1)
 plot(curve[:,1], curve[:,2])
 ```
 
-The parameter `T` can be a single `Real` value or a vector of `Real` values.
+The Bezier curve between `x0` and `x1` is drawn as `T` goes from 0 to 1. 
+`T` can be either a single `Real` value or a vector of `Real` values.
+In the first case, a 2-element array is returned. In the second case,
+an (N,2) array, where N is the length of `T`.
